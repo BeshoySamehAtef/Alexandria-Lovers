@@ -68,6 +68,7 @@
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
+        body {height: auto;}
       .sidenav {
         height: 0px;
           width: 0px;
@@ -76,9 +77,22 @@
       .row {
           height:auto;
           padding-bottom: 40px; 
-          min-height:600px;
+          /*max-height:350px;*/
         } 
-        
+        #headTitle {
+        font-family: "Georgia", serif;
+        font-size: 80px !important;
+    
+        }
+        footer.container {
+            max-height: 300px !important ;
+            
+        }
+        #theHead {
+            text-align: center;
+        }
+        #socialIcons { text-align: center;}
+               
     }
 
 .carousel-inner > .item > img,
@@ -112,13 +126,19 @@
 #bodyFooter {
       background-color: #233B6E;
       color: white;
-      padding:50px;
+      /*padding:50px;*/
+    padding-bottom: 0;
+    
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
 p {
     font-size: 15px;
 }
-h1 {
+#headTitle {
     font-family: "Georgia", serif;
+    font-size: 120px;
+    
 }
+
+
